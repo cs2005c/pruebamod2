@@ -1,0 +1,293 @@
+body {
+    margin: 1px;
+    padding: 0px;
+    height: 100vh;
+    display: grid;   
+    grid-template-areas: "aside main main main"
+                         "aside main main main"
+                         "footer footer footer footer" 
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(221, 228, 164);
+}
+
+main {
+    grid-area:main;
+    background-color:rgb(181, 127, 80);
+    width: 100%;
+    
+}
+
+footer {
+        grid-area: footer;
+        background-color: slategrey;
+}
+
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column;    
+ }
+
+
+
+ nav a {
+    text-decoration:none;
+     color: rgb(12, 12, 12);
+}
+
+nav a:hover {
+     background-color: rgb(75, 84, 59);
+     color: gold;
+     padding: 2px;
+     
+}
+nav li{
+    display:inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    padding: 5px;
+    }
+
+h2 {
+    color: rgb(75, 84, 59);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 7px;
+    text-shadow: 4px 3px 8px rgb(175, 211, 182);
+}
+
+h4 {
+    color: rgb(75, 84, 59);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    padding: 0px;
+    margin:0px;
+    
+}
+
+
+.contenedor {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding: 20px;
+    text-align: center; 
+    
+}
+
+
+.tarjeta {
+    width: 26%;
+    background-color: rgb(249, 250, 250);
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 15% / 40%;
+    box-shadow: 8px 5px 10px;     
+}
+
+
+.titulo {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 5%;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.tarjeta img {
+    max-width: 70%;
+    height:70%;
+    width: 65%;
+}
+
+
+.precio {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    color: rgb(9, 9, 9);
+    background-color: rgb(255, 255, 179);
+    padding: 5px;
+    width: 20%;
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius:5px 10px 5px;
+    box-shadow: 5px 8px 15px; 
+}
+
+
+footer {
+    display:grid;
+    grid-template-columns: 150px 150px 150px;
+    justify-content: center;
+    gap:10%;
+    height: 100%;
+    background-color: rgb(110, 13, 37);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    color: powderblue;
+}
+
+.marcafooter {
+      padding: 20px;
+      margin: 5px;
+      width: 100%;      
+}
+
+.contactofooter {
+    padding: 20px;
+      margin: 5px;
+      width: 100%;    
+}
+
+.redesfooter {
+    padding: 20px;
+      margin: 5px;
+      width: 100%;    
+}
+
+.contactofooter a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    color: powderblue;
+    text-decoration: none;;
+}
+
+.contactofooter a:hover {
+    color: gold;
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
+/* INICIO DE LOS MEDIA QUERY */
+
+
+
+
+ @media (max-width:576px){
+    body {
+        grid-template-areas: "aside  aside  aside aside"
+                             "main main main main"
+                             "footer footer footer footer"
+                            ;
+            }
+
+   .menudiv {
+       height: 6%;
+
+    }
+    
+    .menu-item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tarjeta {
+        width: 100%;
+        background-color: rgb(249, 250, 250);
+        padding: 0px;
+        margin-bottom: 10px;
+        border-radius: 15% / 40%;
+        box-shadow: 8px 5px 10px;     
+    }
+
+    h2 {
+        color: rgb(75, 84, 59);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:larger;
+        text-align: center;
+        padding: 0px;
+        text-shadow: 4px 3px 8px rgb(175, 211, 182);
+    }
+
+
+    footer {
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: center;
+        gap:15%;
+        height: 100%;
+        background-color: rgb(110, 13, 37);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:small;
+        color: powderblue;
+    }
+
+
+
+
+}
+
+@media  (min-width:577px) and (max-width:768px) {
+
+    .tarjeta {
+        width: 43%;
+        background-color: rgb(249, 250, 250);
+        padding: 0px;
+        margin-bottom: 20px;
+        border-radius: 15% / 40%;
+        box-shadow: 8px 5px 10px;     
+    }
+    
+    .precio {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: small;
+        color: rgb(9, 9, 9);
+        background-color: rgb(255, 255, 179);
+        padding: 5px;
+        width: 20%;        
+        margin-bottom: 10%;
+        text-align: center;
+        border-radius:5px 10px 5px;
+        box-shadow: 5px 8px 15px; 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
