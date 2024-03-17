@@ -89,9 +89,15 @@ h4 {
     margin-bottom: 20px;
     border-radius: 15% / 40%;
     box-shadow: 8px 5px 10px;     
+    filter: opacity(50%);
+    filter:grayscale(1);
+    transition: filter 1s ease-out,width 0.5s ease-out;
 }
 
-
+.tarjeta:hover {
+    filter: opacity(100%);
+    width: 30%;
+}
 .titulo {
     display: flex;
     display: flex;
@@ -205,6 +211,15 @@ footer {
         margin-bottom: 10px;
         border-radius: 15% / 40%;
         box-shadow: 8px 5px 10px;     
+        filter: opacity(50%);
+        filter:grayscale(1);
+        transition: filter 1s ease-out,width 0.5s ease-out;
+        }
+
+
+    .tarjeta:hover {
+        filter: opacity(100%);
+        width: 90%;
     }
 
     h2 {
@@ -230,11 +245,9 @@ footer {
     }
 
 
-
-
 }
 
-@media  (min-width:577px) and (max-width:768px) {
+/* @media  (min-width:577px) and (max-width:768px) {
 
     .tarjeta {
         width: 43%;
@@ -243,6 +256,15 @@ footer {
         margin-bottom: 20px;
         border-radius: 15% / 40%;
         box-shadow: 8px 5px 10px;     
+        filter:sepia(2); 
+        filter:grayscale(1);
+        transition: filter 1s ease-out,width 0.5s ease-out;
+    }
+        
+
+    .tarjeta:hover {
+        filter: opacity(100%);
+        width: 46%;
     }
     
     .precio {
@@ -258,7 +280,7 @@ footer {
         box-shadow: 5px 8px 15px; 
     }
 
-}
+} */
 
 
 
