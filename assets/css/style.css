@@ -246,8 +246,7 @@ footer {
 
 
 }
-
-/* @media  (min-width:577px) and (max-width:768px) {
+ @media  (min-width:577px) and (max-width:810px) {
 
     .tarjeta {
         width: 43%;
@@ -280,7 +279,7 @@ footer {
         box-shadow: 5px 8px 15px; 
     }
 
-} */
+} 
 
 
 
